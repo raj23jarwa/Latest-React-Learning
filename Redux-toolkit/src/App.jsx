@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { useDispatch,useSelector } from 'react-redux'
 import { decrement, increment } from './features/counter/counterSlice'
+import Hooks from './components/Hooks'
 
 function App() {
   const dispatch = useDispatch()
@@ -26,6 +27,7 @@ function App() {
         <button onClick={() => dispatch(decrement())}>
           decrement
         </button>
+        <Hooks/>
       </div>
 
     </>
